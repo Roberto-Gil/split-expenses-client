@@ -1,0 +1,20 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name From</th>
+		  <th scope="col">Name To</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cashFlow of cashFlows">
+          <td>{{ cashFlow.nameFrom }}</td>
+		  <td>{{ cashFlow.nameTo }}</td>
+          <td>{{ cashFlow.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

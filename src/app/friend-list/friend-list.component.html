@@ -1,0 +1,18 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let friend of friends">
+          <td>{{ friend.name }}</td>
+          <td>{{ friend.balance }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

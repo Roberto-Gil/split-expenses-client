@@ -1,0 +1,22 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Amount</th>
+		  <th scope="col">Description</th>
+		  <th scope="col">Payment Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let payment of payments">
+          <td>{{ payment.name }}</td>
+          <td>{{ payment.amount }}</td>
+		  <td>{{ payment.description }}</td>
+          <td>{{ payment.paymentDate }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
